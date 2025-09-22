@@ -36,4 +36,10 @@ Podés ver la presentación del proyecto en Gamma:
 ```bash
 git clone https://github.com/usuario/CodigoEmpleo.git
 cd CodigoEmpleo
+```
+
+### 2. Instalar dependencias
+```bash
+npm install
+```
 

@@ -1,0 +1,176 @@
+{
+  "cursos": [
+    {
+      "id": 1,
+      "titulo": "Introducción a JavaScript",
+      "autor": "Ariel Gómez",
+      "duracion": "6 horas",
+      "imagen": "https://i.imgur.com/u1PzX4U.png",
+      "tecnologias": ["JavaScript", "HTML", "CSS"],
+      "seniority": "Junior"
+    },
+    {
+      "id": 2,
+      "titulo": "React desde cero",
+      "autor": "Lucía Fernández",
+      "duracion": "10 horas",
+      "imagen": "https://i.imgur.com/x6XlT7x.png",
+      "tecnologias": ["React", "JSX", "Vite"],
+      "seniority": "Junior"
+    },
+    {
+      "id": 3,
+      "titulo": "Node.js para Backend",
+      "autor": "Carlos Méndez",
+      "duracion": "8 horas",
+      "imagen": "https://i.imgur.com/MiEoFZT.png",
+      "tecnologias": ["Node.js", "Express", "API REST"],
+      "seniority": "Semi Senior"
+    },
+    {
+      "id": 4,
+      "titulo": "Bases de datos con MongoDB",
+      "autor": "Laura Peña",
+      "duracion": "5 horas",
+      "imagen": "https://i.imgur.com/E8sLZtJ.png",
+      "tecnologias": ["MongoDB", "NoSQL", "Mongoose"],
+      "seniority": "Junior"
+    },
+    {
+      "id": 5,
+      "titulo": "Python para Ciencia de Datos",
+      "autor": "Nicolás Duarte",
+      "duracion": "12 horas",
+      "imagen": "https://i.imgur.com/VwqHk6O.png",
+      "tecnologias": ["Python", "Pandas", "NumPy"],
+      "seniority": "Semi Senior"
+    },
+    {
+      "id": 6,
+      "titulo": "HTML y CSS Avanzado",
+      "autor": "Camila Torres",
+      "duracion": "7 horas",
+      "imagen": "https://i.imgur.com/mTVsM7L.png",
+      "tecnologias": ["HTML", "CSS", "Flexbox", "Grid"],
+      "seniority": "Junior"
+    },
+    {
+      "id": 7,
+      "titulo": "Fundamentos de Ciberseguridad",
+      "autor": "Ezequiel Rojas",
+      "duracion": "9 horas",
+      "imagen": "https://i.imgur.com/Dc6gHFl.png",
+      "tecnologias": ["Redes", "Seguridad Web", "Criptografía"],
+      "seniority": "Semi Senior"
+    },
+    {
+      "id": 8,
+      "titulo": "Desarrollo Full Stack con MERN",
+      "autor": "Valentina Castro",
+      "duracion": "20 horas",
+      "imagen": "https://i.imgur.com/xFDxXMu.png",
+      "tecnologias": ["MongoDB", "Express", "React", "Node.js"],
+      "seniority": "Senior"
+    },
+    {
+      "id": 9,
+      "titulo": "Automatización con Python",
+      "autor": "Martín Pereyra",
+      "duracion": "6 horas",
+      "imagen": "https://i.imgur.com/4j5TgLb.png",
+      "tecnologias": ["Python", "Selenium", "APIs"],
+      "seniority": "Semi Senior"
+    },
+    {
+      "id": 10,
+      "titulo": "Git y GitHub desde cero",
+      "autor": "Rocío Navarro",
+      "duracion": "4 horas",
+      "imagen": "https://i.imgur.com/qW4FyWA.png",
+      "tecnologias": ["Git", "GitHub", "Control de versiones"],
+      "seniority": "Junior"
+    }
+  ],
+  "trabajos": [
+    {
+      "id": 1,
+      "titulo": "Frontend Developer",
+      "empresa": "TechNova",
+      "ubicacion": "Remoto",
+      "tecnologia": ["React", "JavaScript", "Vite"],
+      "seniority": "Junior"
+    },
+    {
+      "id": 2,
+      "titulo": "Backend Developer",
+      "empresa": "DataBridge",
+      "ubicacion": "Buenos Aires, Argentina",
+      "tecnologia": ["Node.js", "Express", "MongoDB"],
+      "seniority": "Semi Senior"
+    },
+    {
+      "id": 3,
+      "titulo": "Full Stack Developer",
+      "empresa": "CodeWorks",
+      "ubicacion": "Remoto",
+      "tecnologia": ["React", "Node.js", "PostgreSQL"],
+      "seniority": "Semi Senior"
+    },
+    {
+      "id": 4,
+      "titulo": "QA Automation Engineer",
+      "empresa": "SoftQA",
+      "ubicacion": "Córdoba, Argentina",
+      "tecnologia": ["Selenium", "Python"],
+      "seniority": "Junior"
+    },
+    {
+      "id": 5,
+      "titulo": "Data Analyst",
+      "empresa": "InsightHub",
+      "ubicacion": "Remoto",
+      "tecnologia": ["Python", "Power BI", "SQL"],
+      "seniority": "Semi Senior"
+    },
+    {
+      "id": 6,
+      "titulo": "DevOps Engineer",
+      "empresa": "Cloudify",
+      "ubicacion": "Rosario, Argentina",
+      "tecnologia": ["AWS", "Docker", "CI/CD"],
+      "seniority": "Senior"
+    },
+    {
+      "id": 7,
+      "titulo": "Mobile Developer",
+      "empresa": "AppStorm",
+      "ubicacion": "Remoto",
+      "tecnologia": ["React Native", "TypeScript"],
+      "seniority": "Semi Senior"
+    },
+    {
+      "id": 8,
+      "titulo": "Game Developer",
+      "empresa": "PixelForge",
+      "ubicacion": "Buenos Aires, Argentina",
+      "tecnologia": ["Unity", "C#"],
+      "seniority": "Semi Senior"
+    },
+    {
+      "id": 9,
+      "titulo": "Cybersecurity Analyst",
+      "empresa": "SecuraTech",
+      "ubicacion": "Remoto",
+      "tecnologia": ["Linux", "Network Security", "Python"],
+      "seniority": "Senior"
+    },
+    {
+      "id": 10,
+      "titulo": "UX/UI Designer",
+      "empresa": "DesignFlow",
+      "ubicacion": "Mendoza, Argentina",
+      "tecnologia": ["Figma", "Adobe XD"],
+      "seniority": "Junior"
+    }
+  ]
+}

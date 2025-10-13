@@ -22,14 +22,15 @@ const traerCursos = async () => {
 console.log(await traerCursos());
 
 //Mostrar cursos en pantalla
-
+const cursosContainer = document.querySelector("#CursosContainer");
 async function mostrarCursos() {
   const cursos = await traerCursos();
   var html = "";
 
-  cursos.forEach((curso) => {
-    console.log(curso);
-    html += `
+  try {
+    cursos.forEach((curso) => {
+      console.log(curso);
+      html += `
         <div class="row g-4" >
         <div class="col-12 col-sm-6 col-md-4 col-lg-3" >
         <div class="card course-card shadow-sm border-0">
@@ -45,11 +46,12 @@ async function mostrarCursos() {
             </div>
             </div>
                 `;
-  });
-
-  const cursosContainer = document.querySelector("#CursosContainer");
+    });
+  } catch (err) {
+    html += `<p>Error al cargar los cursos</p>`;
+  }
 
   cursosContainer.innerHTML += html;
 }
 
-mostrarCursos();
+addEventListener("DOMContentLoaded", mostrarCursos());

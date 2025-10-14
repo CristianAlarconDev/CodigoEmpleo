@@ -1,4 +1,6 @@
-const empleos_mock='https://68ee91ccdf2025af78042146.mockapi.io/recursos/:empleos';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+const empleos_mock='https://68ee91ccdf2025af78042146.mockapi.io/recursos/empleos';
 
 export async function fetchEmpleos(){
     console.log(`Se intenta leer datos de : ${empleos_mock}`);
@@ -9,7 +11,7 @@ export async function fetchEmpleos(){
             -${respuesta.statusText}`);
     }    
     //si todo ok
-        const infoJson= respuesta.json();
+        const infoJson= await respuesta.json();
         return infoJson;
 
     } catch (error) {
@@ -20,28 +22,45 @@ export async function fetchEmpleos(){
 
 function renderizarEmpleos(empleosJson){
         const contenedor = document.querySelector("#empleos-contenedor");
-        empleos.forEach(empleo => {
+        if(!empleosJson||empleosJson.length===0){
+            contenedor.innerHTML = `<div class="col-12"><p>No se encontraron ofertas de empleo.</p></div>`;
+            return;
+        }
+        let html="";
+        empleosJson.forEach(empleo => {
         html += `
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm border-0">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">${empleo.titulo}</h5>
-                        <p class="card-subtitle mb-2 text-muted">${empleo.empresa} | ${empleo.ubicacion}</p>
+            <div class="col-12 mb-3"> 
+            
+            <article class="card h-100">
+                
+                <div class="d-flex justify-content-between p-3">
+                    
+                    <section class="me-4 flex-grow-1">
+                        <h5 class="card-title fw-bold mb-1">${empleo.titulo}</h5>
                         
-                        <p class="card-text">${empleo.descripcion.substring(0, 150)}...</p>
+                        <p class="card-subtitle text-muted mb-2 small">
+                            ${empleo.empresa} | ${empleo.ubicacion}
+                        </p>
                         
-                        <span class="badge bg-primary">${empleo.salario}</span>
+                        <p class="card-text text-body-secondary mb-2">${empleo.descripcion.substring(0, 150)}...</p>
+                    </section>
+                    
+                    <aside class="text-end d-flex flex-column justify-content-between align-items-end">
                         
-                    </div>
-                    <div class="card-footer bg-white border-0">
-                        <a href="#" class="btn btn-primary btn-sm">Postularme</a>
-                    </div>
+                        <span class="fw-bold text-primary fs-6 mb-2">${empleo.salario}</span>
+                        
+                        <a href="#" class="btn btn-sm btn-outline-primary mb-2">Ver Detalles</a>
+                        
+                        <span class="badge bg-secondary">${empleo.seniority || 'N/A'}</span> 
+                    </aside>
                 </div>
-            </div>
+            </article>
+        </div>
+
         `;
     });
     
-    // Inyecta el HTML en el contenedor
+    
     contenedor.innerHTML = html;
 }
 async function iniciarAplicacion() {

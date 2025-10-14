@@ -18,4 +18,34 @@ export async function fetchEmpleos(){
     }
 }
 
-
+function renderizarEmpleos(empleosJson){
+        const contenedor = document.querySelector("#empleos-contenedor");
+        empleos.forEach(empleo => {
+        html += `
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">${empleo.titulo}</h5>
+                        <p class="card-subtitle mb-2 text-muted">${empleo.empresa} | ${empleo.ubicacion}</p>
+                        
+                        <p class="card-text">${empleo.descripcion.substring(0, 150)}...</p>
+                        
+                        <span class="badge bg-primary">${empleo.salario}</span>
+                        
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <a href="#" class="btn btn-primary btn-sm">Postularme</a>
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+    
+    // Inyecta el HTML en el contenedor
+    contenedor.innerHTML = html;
+}
+async function iniciarAplicacion() {
+    const empleosData = await fetchEmpleos();
+    renderizarEmpleos(empleosData);
+}
+document.addEventListener("DOMContentLoaded", iniciarAplicacion);

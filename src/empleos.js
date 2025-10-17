@@ -28,6 +28,7 @@ function renderizarEmpleos(empleosJson){
             const cardEmpleo = crearCardEmpleo(empleo);
             contenedor.appendChild(cardEmpleo);
         });
+
 }
 async function iniciarAplicacion() {
     const empleosData = await fetchEmpleos();

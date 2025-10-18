@@ -10,7 +10,8 @@ export default defineConfig({
       input: {
         main: 'index.html',
         cursos: 'cursos.html', // 🔹 tu segunda página
-        cursosActualizado: 'cursosActualizado.html'
+        cursosActualizado: 'cursosActualizado.html',
+        home: 'home.html'
       },
     },
   },

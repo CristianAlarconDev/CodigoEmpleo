@@ -8,3 +8,28 @@
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
+.curso-card {
+      width: 200px;
+      height: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .curso-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .curso-card img {
+      height: 150px;
+      object-fit: cover;
+    }
+
+    /* Asegura que el grid sea responsive */
+    #contenedor-cursos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem;
+    }

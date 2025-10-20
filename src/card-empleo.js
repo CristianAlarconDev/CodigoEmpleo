@@ -1,6 +1,9 @@
 export function crearCardEmpleo(empleo){
-    const colDiv = document.createElement('div');
-    colDiv.className = 'col-12 mb-3';
+    const divCard = document.createElement('div');
+    divCard.className = 'col-12 mb-3 card-empleo';
+    divCard.dataset.seniority = empleo.seniority || ''; 
+    divCard.dataset.modalidad = empleo.modalidad || '';
+    
     const cardArticle = document.createElement('article');
     cardArticle.className = 'card h-100 job-card-simple'; 
     
@@ -18,12 +21,12 @@ export function crearCardEmpleo(empleo){
             <aside class="text-end d-flex flex-column justify-content-between align-items-end">
                 <span class="fw-bold text-primary fs-6 mb-2">${empleo.salario}</span>
                 <a href="#" class="btn btn-sm btn-outline-primary mb-2">Ver Detalles</a>
-                <span class="badge bg-secondary">${empleo.seniority || 'N/A'}</span>
+                <span class="badge bg-secondary" data-seniority = "${empleo.seniority}">${empleo.seniority || 'N/A'}</span>
             </aside>
         </div>
     `;
 
-    colDiv.appendChild(cardArticle);
+    divCard.appendChild(cardArticle);
 
     return colDiv;
 

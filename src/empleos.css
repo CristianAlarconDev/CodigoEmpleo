@@ -1,0 +1,78 @@
+
+#filters-sidebar {
+   
+    flex: 0 0 250px; 
+    padding: 20px;
+    margin-right: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilos para agrupar filtros */
+.filter-group {
+    margin-bottom: 25px; 
+}
+
+.filter-group h6 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.custom-select {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 1em;
+    cursor: pointer;
+    appearance: none; 
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M287%2095.6l-143.2%20143.2L0%2095.6H287z%22%2F%3E%3C%2Fsvg%3E'); /* Flecha personalizada */
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 12px;
+}
+
+.custom-checkbox-item {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.custom-checkbox-item label {
+    margin-left: 8px;
+    font-size: 0.95em;
+    color: #444;
+    cursor: pointer;
+}
+
+.custom-checkbox-item input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+    
+    width: 18px;
+    height: 18px;
+    border: 2px solid #4c7dac; /* Color del borde */
+    border-radius: 3px;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.custom-checkbox-item input[type="checkbox"]:checked {
+    background-color: #baa7a7; /* Fondo al estar marcado */
+    border-color: #aa9494;
+}
+
+/* Separador visual */
+.separator {
+    border: 0;
+    height: 1px;
+    background-color: #eee;
+    margin: 20px 0;
+}

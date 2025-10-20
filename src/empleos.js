@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "./empleos.css";
 import { crearCardEmpleo } from "./card-empleo";
 const empleos_mock='https://68ee91ccdf2025af78042146.mockapi.io/recursos/empleos';
 

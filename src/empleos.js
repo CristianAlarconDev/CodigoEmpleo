@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./empleos.css";
 import { crearCardEmpleo } from "./card-empleo";
+import { inicializarFiltros, chequearCards } from "./filtro-empleos";
 const empleos_mock='https://68ee91ccdf2025af78042146.mockapi.io/recursos/empleos';
 
 export async function fetchEmpleos(){
@@ -34,5 +35,7 @@ function renderizarEmpleos(empleosJson){
 async function iniciarAplicacion() {
     const empleosData = await fetchEmpleos();
     renderizarEmpleos(empleosData);
+    //chequearCards();
+    inicializarFiltros();
 }
 document.addEventListener("DOMContentLoaded", iniciarAplicacion);

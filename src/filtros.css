@@ -1,0 +1,119 @@
+
+#filters-sidebar {
+    background: linear-gradient(180deg, #fff, #fbfdff);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--card-border);
+    box-shadow: 0 8px 24px rgba(6,34,74,0.04);
+    
+    position: sticky;
+    top: 24px; 
+    align-self: start; 
+}
+
+#filters-sidebar h3 {
+    margin: 0 0 16px 0;
+    font-size: 1.3rem;
+    color: #08243a; /* Color oscuro de los títulos de card */
+}
+
+.filter-group {
+    margin-bottom: 16px;
+}
+
+.filter-group h6 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    
+    margin-bottom: 10px;
+}
+
+hr.separator {
+    border: none;
+    height: 1px;
+    
+    margin: 20px 0;
+}
+
+
+/* --- Estilos para Formularios (Select y Checkbox) --- */
+
+/* Selector (Seniority) */
+.custom-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--card-border);
+    border-radius: 9px;
+    background-color: #fff; 
+
+    font-size: 0.95rem;
+    color: #374957;
+    transition: box-shadow 140ms ease, border-color 140ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 1em;
+}
+
+.custom-select:focus {
+    outline: none;
+    border-color: var(--primary); /* Borde azul al enfocar */
+    box-shadow: 0 6px 18px rgba(13,110,253,0.08); /* Sombra suave de 'hero' */
+}
+
+/* Checkboxes (Modalidad) */
+.custom-checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.custom-checkbox-item label {
+    color: #374957;
+    font-size: 0.95rem;
+    cursor: pointer;
+     /* Evita seleccionar el texto del label */
+}
+
+/* Ocultamos el checkbox default */
+.custom-checkbox-item input[type="checkbox"] {
+    
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ddeaf8; /* Borde más suave */
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 120ms ease;
+    position: relative;
+    flex-shrink: 0; 
+}
+
+/* Estilo al estar check */
+.custom-checkbox-item input[type="checkbox"]:checked {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+
+.custom-checkbox-item input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Hover (solo cuando no está 'checked') */
+.custom-checkbox-item:hover input[type="checkbox"]:not(:checked) {
+    border-color: var(--primary-2); /* Celeste claro en hover */
+}

@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/filtros.css" />
+    <link rel="stylesheet" href="/src/empleos-pagina.css" />
     <title>CodigoEmpleo</title>
 </head>
-<body>
-    <aside id="filters-sidebar">
-    <h3>Filtros de Búsqueda</h3>
+    <body>
+        <main class="contenedor-pagina">
+            <aside id="filters-sidebar">
+        <h3>Filtros de Búsqueda</h3>
 
-    <section class="filter-group" id="filtros-seniority">
-        <h6>Nivel (Seniority)</h6>
-        <select title="Nivel de experiencia" class="custom-select" id="seniority-select" name="seniority">
+        <section class="filter-group" id="filtros-seniority">
+          <h6>Nivel (Seniority)</h6>
+          <select
+            title="Nivel de experiencia"
+            class="custom-select"
+            id="seniority-select"
+            name="seniority"
+          >
             <option value="Todos">Todos los niveles</option>
+            <option value="Trainee">Trainee</option>
             <option value="Junior">Junior</option>
             <option value="Semi Senior">Semi-Senior</option>
             <option value="Senior">Senior</option>
-        </select>
-    </section>
+          </select>
+        </section>
 
-    <hr class="separator">
+        <hr class="separator" />
 
-    <section class="filter-group" id="filtros-modalidad">
-        <h6>Modalidad</h6>
-        
-        <div class="custom-checkbox-item">
-            <input type="checkbox" value="Remoto" id="mod-remoto" name="modalidad">
+        <section class="filter-group" id="filtros-modalidad">
+          <h6>Modalidad</h6>
+
+          <div class="custom-checkbox-item">
+            <input
+              type="checkbox"
+              value="Remoto"
+              id="mod-remoto"
+              name="modalidad"
+            />
             <label for="mod-remoto">Remoto</label>
-        </div>
-        
-        <div class="custom-checkbox-item">
-            <input type="checkbox" value="Híbrido" id="mod-hibrido" name="modalidad">
+          </div>
+
+          <div class="custom-checkbox-item">
+            <input
+              type="checkbox"
+              value="Híbrido"
+              id="mod-hibrido"
+              name="modalidad"
+            />
             <label for="mod-hibrido">Híbrido</label>
-        </div>
-        
-        <div class="custom-checkbox-item">
-            <input type="checkbox" value="Presencial" id="mod-presencial" name="modalidad">
+          </div>
+
+          <div class="custom-checkbox-item">
+            <input
+              type="checkbox"
+              value="Presencial"
+              id="mod-presencial"
+              name="modalidad"
+            />
             <label for="mod-presencial">Presencial</label>
-        </div>
-    </section>
-</aside>
-    <section id="empleos-contenedor"></section>
-    <script type="module" src="/src/empleos.js"></script> 
-</body>
+          </div>
+        </section>
+            </aside>
+        
+            <section id="empleos-contenedor" class="jobs"></section>
+        </main>
+    <script type="module" src="/src/empleos.js"></script>
+    </body>
 </html>

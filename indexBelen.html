@@ -1,0 +1,198 @@
+<!doctype html> <!-- Declara que este documento es HTML5 -->
+<html lang="es"> <!-- Inicia el elemento raíz del documento y define el idioma como español -->
+<head> <!-- Contiene metadatos sobre el documento -->
+    <meta charset="utf-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Asegura que el sitio sea responsive en móviles -->
+    <title>Portal de Empleo - Inicio</title> <!-- Título que se muestra en la pestaña del navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos externa -->
+    <style> 
+    </style> <!-- Fin de estilos internos -->
+</head> <!-- Cierre de la sección de metadatos -->
+<body> <!-- Inicio del contenido visible de la página -->
+    <div class="container"> <!-- Contenedor principal centrado -->
+        <!-- HEADER: navegación principal y acciones de usuario -->
+        <header> <!-- Encabezado con marca, navegación y acciones -->
+            <!-- .marca: logo + nombre; el enlace lleva al inicio (href="#" es un placeholder) -->
+            <a class="marca" href="#" aria-label="Ir a inicio"> <!-- Enlace que contiene logo y nombre de la marca -->
+              <!-- .logotipo: marca visual; aria-hidden porque es decorativo -->
+              <div class="logotipo" aria-hidden="true">FC</div> <!-- Bloque visual con las iniciales -->
+              <div> <!-- Contenedor del título y eslogan -->
+                <!-- título de marca -->
+                <div>&lt;Codigo Empleo/&gt;</div> <!-- Texto de marca visible -->
+                <!-- eslogan / subtítulo -->
+                <div class="atenuado">Talento | Oportunidades | Comunidad</div> <!-- Subtítulo atenuado -->
+              </div> <!-- Fin contenedor título/eslogan -->
+            </a> <!-- Fin enlace marca -->
+
+            <!-- Navegación principal: lista de enlaces a secciones del sitio -->
+            <nav aria-label="Navegación principal"> <!-- Nav con etiqueta accesible -->
+              <ul> <!-- Lista de enlaces de navegación -->
+                <li><a href="#">Inicio</a></li> <!-- Enlace sección Inicio -->
+                <li><a href="#">Empleos</a></li> <!-- Enlace sección Empleos -->
+                <li><a href="#">Programas</a></li> <!-- Enlace sección Programas -->
+                <li><a href="#">Recursos</a></li> <!-- Enlace sección Recursos -->
+                <li><a href="#">Contacto</a></li> <!-- Enlace sección Contacto -->
+              </ul> <!-- Fin lista -->
+            </nav> <!-- Fin navegación -->
+
+            <!-- Acciones: botones para iniciar sesión o registrarse -->
+            <div class="acciones"> <!-- Contenedor de botones -->
+              <button class="boton boton-outline" type="button">Iniciar sesión</button> <!-- Botón inicio de sesión (visual) -->
+              <button class="boton boton-primario" type="button">Regístrate</button> <!-- Botón registrarse (visual) -->
+            </div> <!-- Fin acciones -->
+        </header> <!-- Fin del encabezado -->
+
+        <main> <!-- Contenido principal de la página -->
+            <section class="hero"> <!-- Sección destacada con búsqueda -->
+                <h1>Encuentra tu próximo trabajo</h1> <!-- Mensaje principal -->
+                <p>Busca por puesto, empresa o ubicación.</p> <!-- Texto auxiliar -->
+                <form class="search" action="#" method="get"> <!-- Formulario de búsqueda (solo visual, sin backend) -->
+                    <input type="text" name="q" placeholder="Ej: diseñador gráfico, programador..." /> <!-- Campo de texto para la búsqueda -->
+                    <select name="location"> <!-- Selector para ubicación -->
+                        <option value="">Todas las ubicaciones</option> <!-- Opción por defecto -->
+                        <option value="remoto">Remoto</option> <!-- Opción remoto -->
+                        <option value="madrid">Madrid</option> <!-- Ejemplo de ciudad -->
+                        <option value="barcelona">Barcelona</option> <!-- Ejemplo de ciudad -->
+                    </select> <!-- Cierre del selector -->
+                    <button type="submit">Buscar</button> <!-- Botón para enviar el formulario -->
+                </form> <!-- Cierre del formulario -->
+            </section> <!-- Fin de la sección hero -->
+
+            <section class="empleos-destacados"> <!-- Sección con listado de trabajos destacados -->
+                <h2>Ofertas destacadas</h2> <!-- Título de la sección -->
+                <div class="jobs"> <!-- Contenedor de tarjetas de empleo -->
+                    <article class="job-card"> <!-- Tarjeta de trabajo 1 -->
+                        <h3>Desarrollador Frontend</h3> <!-- Nombre del puesto -->
+                        <p>Empresa: Tech Solutions · Jornada completa · Remoto</p> <!-- Línea con empresa y detalles -->
+                        <div class="job-meta"> <!-- Metadatos del puesto -->
+                            <span>Publicado: 2 días</span> <!-- Fecha de publicación -->
+                            <span>Salario: 25k-35k</span> <!-- Rango salarial -->
+                        </div> <!-- Fin de metadatos -->
+                        <a class="apply" href="#">Ver oferta</a> <!-- Enlace para ver o aplicar (falso enlace) -->
+                    </article> <!-- Fin tarjeta 1 -->
+
+                    <article class="job-card"> <!-- Tarjeta de trabajo 2 -->
+                        <h3>Diseñador UX/UI</h3> <!-- Nombre del puesto -->
+                        <p>Empresa: Creativa Studio · Jornada parcial · Presencial</p> <!-- Descripción breve -->
+                        <div class="job-meta"> <!-- Metadatos -->
+                            <span>Publicado: 5 días</span> <!-- Fecha de publicación -->
+                            <span>Salario: 18k-28k</span> <!-- Rango salarial -->
+                        </div> <!-- Fin de metadatos -->
+                        <a class="apply" href="#">Ver oferta</a> <!-- Botón/aplicar -->
+                    </article> <!-- Fin tarjeta 2 -->
+
+                    <article class="job-card"> <!-- Tarjeta de trabajo 3 -->
+                        <h3>Analista de Datos Jr.</h3> <!-- Nombre del puesto -->
+                        <p>Empresa: DataCorp · Jornada completa · Híbrido</p> <!-- Descripción breve -->
+                        <div class="job-meta"> <!-- Metadatos -->
+                            <span>Publicado: 1 día</span> <!-- Fecha de publicación -->
+                            <span>Salario: 22k-30k</span> <!-- Rango salarial -->
+                        </div> <!-- Fin de metadatos -->
+                        <a class="apply" href="#">Ver oferta</a> <!-- Botón/aplicar -->
+                    </article> <!-- Fin tarjeta 3 -->
+                </div> <!-- Cierre del contenedor de trabajos -->
+            </section> <!-- Fin de la sección de ofertas -->
+
+            <section class="impact"> <!-- Nueva sección: Programas de impacto -->
+                <div class="impact-header"> <!-- Header con título y enlace -->
+                    <h2>Programas de impacto</h2> <!-- Título principal de programas -->
+                    <a href="#">Conoce nuestros programas →</a> <!-- Enlace para más información -->
+                </div> <!-- Fin del header -->
+                
+                <div class="programs"> <!-- Contenedor para las tarjetas de programas -->
+                    <div class="program-card"> <!-- Tarjeta 1: Formación Técnica -->
+                        <h3>Formación Técnica</h3> <!-- Título del programa -->
+                        <p>Cursos gratuitos para desarrollar habilidades demandadas por empleadores locales.</p> <!-- Descripción del programa -->
+                    </div> <!-- Fin tarjeta 1 -->
+
+                    <div class="program-card"> <!-- Tarjeta 2: Mentoría Laboral -->
+                        <h3>Mentoría Laboral</h3> <!-- Título del programa -->
+                        <p>Acompañamiento individual para mejorar CV, entrevistas y búsqueda de empleo.</p> <!-- Descripción del programa -->
+                    </div> <!-- Fin tarjeta 2 -->
+
+                    <div class="program-card"> <!-- Tarjeta 3: Bolsa de Empleo Social -->
+                        <h3>Bolsa de Empleo Social</h3> <!-- Título del programa -->
+                        <p>Conexión directa entre empresas con compromiso social y candidatos capacitados.</p> <!-- Descripción del programa -->
+                    </div> <!-- Fin tarjeta 3 -->
+                </div> <!-- Fin del contenedor de programas -->
+            </section> <!-- Fin de la sección Programas de impacto -->
+
+            <section class="testimonials"> <!-- Nueva sección: Testimonios -->
+                <h2>Testimonios</h2> <!-- Título de testimonios -->
+                <div class="testimonial-list"> <!-- Contenedor de testimonios -->
+                    <div class="testimonial-card"> <!-- Testimonio 1 -->
+                        <p class="quote">"Gracias al taller mejoré mi CV y hoy trabajo de tiempo completo. La fundación cambió mi vida."</p> <!-- Cita del testimonio -->
+                        <p class="author">María G.</p> <!-- Nombre del autor -->
+                    </div> <!-- Fin testimonio 1 -->
+
+                    <div class="testimonial-card"> <!-- Testimonio 2 -->
+                        <p class="quote">"Recibí mentoría y acompañamiento durante el proceso de selección. Recomiendo el programa."</p> <!-- Cita del testimonio -->
+                        <p class="author">Carlos R.</p> <!-- Nombre del autor -->
+                    </div> <!-- Fin testimonio 2 -->
+
+                    <div class="testimonial-card"> <!-- Testimonio 3 (empresa aliada) -->
+                        <p class="quote">"Contratamos talento local preparado y comprometido con valores sociales."</p> <!-- Cita de la empresa -->
+                        <p class="author">Empresa Aliada</p> <!-- Nombre de la empresa -->
+                    </div> <!-- Fin testimonio 3 -->
+                </div> <!-- Fin del contenedor de testimonios -->
+            </section> <!-- Fin de la sección Testimonios -->
+
+        </main> <!-- Fin del contenido principal -->
+
+        <!-- FOOTER: contacto, redes y suscripción -->
+        <footer> <!-- Inicio del footer principal -->
+            <div class="grid-footer"> <!-- Grid que contiene las tres columnas del footer -->
+                <div> <!-- Columna 1: marca y contacto -->
+                    <div class="marca-footer"> <!-- Fila con logotipo y texto de marca -->
+                        <div class="logotipo">FC</div> <!-- Logotipo o iniciales (visuales) -->
+                        <div> <!-- Contenedor para nombre y lema -->
+                            <div class="nombre-marca">Codigo Empleo</div> <!-- Nombre de la fundación -->
+                            <div class="pequeno">Impulsando empleo y dignidad</div> <!-- Lema pequeño -->
+                        </div> <!-- Fin contenedor de nombre y lema -->
+                    </div> <!-- Fin marca-footer -->
+
+                    <div class="contacto pequeno"> <!-- Información de contacto -->
+                        Dirección: Calle Falsa 123 · Ciudad · País<br/> <!-- Dirección con salto -->
+                        Email: <a href="mailto:info@codigoempleo.org">info@codigoempleo.org</a><br/> <!-- Enlace mailto -->
+                        Tel: +54 300 000 0000 <!-- Teléfono de contacto -->
+                    </div> <!-- Fin contacto -->
+                </div> <!-- Fin columna 1 -->
+
+                <div> <!-- Columna 2: espacios en blanco o futuras secciones (dejada simple) -->
+                    <!-- Aquí puede ir información adicional, enlaces rápidos o mapa (por ahora vacío para simplicidad) -->
+                </div> <!-- Fin columna 2 -->
+
+                <div> <!-- Columna 3: redes y suscripción -->
+                    <div class="fila-social"> <!-- Fila para redes -->
+                        <div class="redes" aria-hidden="true"> <!-- Contenedores de iconos sociales (simples) -->
+                            <div class="pastilla">FB</div> <!-- Botón social Facebook -->
+                            <div class="pastilla">TW</div> <!-- Botón social Twitter -->
+                            <div class="pastilla">IN</div> <!-- Botón social LinkedIn -->
+                        </div> <!-- Fin redes -->
+                    </div> <!-- Fin fila-social -->
+
+                    <!-- Formulario de suscripción (input de tipo email) -->
+                    <div class="boletin"> <!-- Contenedor del boletín -->
+                        <label class="pequeno" for="correo-boletin">Suscríbete a nuestro boletín</label> <!-- Label accesible -->
+                        <div class="fila-boletin"> <!-- Fila que contiene input y botón -->
+                            <input id="correo-boletin" type="email" placeholder="Tu correo" class="input-boletin"/> <!-- Campo email -->
+                            <button class="boton boton-primario">Suscribirme</button> <!-- Botón de suscripción (no funcional sin backend) -->
+                        </div> <!-- Fin fila-boletin -->
+                    </div> <!-- Fin boletin -->
+                </div> <!-- Fin columna 3 -->
+            </div> <!-- Fin grid-footer -->
+
+            <!-- Línea legal / copyright con año dinámico -->
+            <div class="legal"> <!-- Contenedor de la línea legal -->
+              © <span id="anio"></span> Codigo Empleo — Todos los derechos reservados. <!-- Año se insertará con JS -->
+            </div> <!-- Fin legal -->
+        </footer> <!-- Fin del footer principal -->
+
+    </div> <!-- Cierre del contenedor principal -->
+
+    <script type="module" src="/src/main.js"></script>
+    <script> /* Script pequeño para insertar el año actual en el footer */ 
+        document.getElementById('anio').textContent = new Date().getFullYear(); /* Inserta dinámicamente el año actual */
+    </script> <!-- Fin del script -->
+</body> <!-- Fin del contenido visible -->
+</html> <!-- Fin del documento HTML -->

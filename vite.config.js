@@ -11,7 +11,8 @@ export default defineConfig({
         main: 'index.html',
         cursos: 'cursos.html', // 🔹 tu segunda página
         cursosActualizado: 'cursosActualizado.html',
-        home: 'home.html'
+        home: 'home.html',
+        indexBelen: 'indexBelen.html'
       },
     },
   },

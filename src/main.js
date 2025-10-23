@@ -2,6 +2,7 @@ import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { fetchCursos } from "./cursosFetch";
+import { iniciarAplicacion } from "./empleosFetch";
 
 
 /*Desde JSONServer
@@ -98,4 +99,6 @@ async function iniciarAplicacionCursos() {
     const cursosData = await fetchCursos();
     mostrarCursos(cursosData);
 }
+
 document.addEventListener("DOMContentLoaded", iniciarAplicacionCursos);
+document.addEventListener("DOMContentLoaded", iniciarAplicacion);

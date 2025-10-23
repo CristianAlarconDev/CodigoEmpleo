@@ -1,0 +1,72 @@
+  :root {
+    --primary: #0d6efd;        /* azul principal */
+    --primary-2: #66c2ff;     /* celeste/acento */
+    --primary-dark: #084bb5;  /* azul oscuro para hover */
+    --bg-1: #f5f9ff;          /* fondo general claro */
+    --bg-2: #eef6ff;          /* fondo secundario */
+    --card-border: #e6f2ff;
+    --muted: #6c757d;
+    --radius: 10px;
+    --shadow-sm: 0 4px 14px rgba(13,110,253,0.06);
+    --shadow-xs: 0 1px 3px rgba(2,6,23,0.06);
+    --glass: rgba(255,255,255,0.6);
+  }
+.jobs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+}
+/* Estilos para la tarjeta individual */
+.job-card {
+    background: linear-gradient(180deg, #fff, #fbfdff);
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid var(--card-border);
+    box-shadow: 0 8px 24px rgba(6,34,74,0.04);
+    transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+/* Efecto hover para la tarjeta */
+.job-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 46px rgba(6,34,74,0.06);
+}
+
+/* Título del puesto */
+.job-card h3 {
+    margin: 0 0 6px 0;
+    font-size: 1.12rem;
+    color: #08243a;
+}
+
+/* Párrafo de descripción (empresa, jornada) */
+.job-card p {
+    margin: 0 0 8px 0;
+    color: #374957;
+    font-size: 0.95rem;
+}
+
+/* Contenedor de metadatos (fecha, salario) */
+.job-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+/* Botón/Enlace de "Ver oferta" */
+.apply {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: linear-gradient(90deg, var(--primary), var(--primary-2));
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 120ms ease, box-shadow 140ms ease;
+}
+
+.apply:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-sm);
+}

@@ -6,7 +6,9 @@ export function crearCardEmpleo(empleo){
     cardArticle.dataset.modalidad = empleo.modalidad;
     cardArticle.innerHTML = `
         <h3>${empleo.titulo}</h3>
-        <p>Empresa: ${empleo.empresa} · ${empleo.ubicacion}</p>
+        <p>Empresa: ${empleo.empresa}</p>
+        <p>Ubicación: ${empleo.ubicacion}</p>
+        <p>Modalidad: ${empleo.modalidad}</p>
         <div class="job-meta">
             <span>${empleo.seniority}</span>
             <span>${empleo.salario}</span>

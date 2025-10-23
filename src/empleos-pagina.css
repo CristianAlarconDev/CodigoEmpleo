@@ -1,0 +1,40 @@
+
+body {
+    background-color: #e4eff7; 
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #17232a;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-pagina {
+    max-width: 1200px;
+    margin: 28px auto; /* Centrado y con margen sup/inf */
+    padding: 0 16px; /* Padding lateral */
+    
+    /* --- El Layout de Grid --- */
+    display: grid;
+    /* Columna 1 (filtros): 280px fijos. Columna 2 (jobs): toma el resto (1fr) */
+    grid-template-columns: 280px 1fr;
+    
+    /* Esta es la separación correcta (reemplaza al <hr>) */
+    gap: 24px; 
+}
+
+
+/* --- Responsive para Móviles --- */
+@media (max-width: 720px) {
+    .contenedor-pagina {
+        /* En pantallas chicas, rompemos el grid y apilamos (1 sola columna) */
+        grid-template-columns: 1fr;
+        margin: 16px auto;
+        gap: 16px;
+    }
+
+    #filters-sidebar {
+        position: static; 
+        top: auto;
+    }
+}
+

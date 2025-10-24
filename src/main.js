@@ -67,21 +67,17 @@ addEventListener("DOMContentLoaded", mostrarCursos());
 
 */
 
-const contenedorCursos = document.getElementById("contenedor-cursos");
+const contenedorCursos = document.querySelector(".courses");
 
 function crearCardCurso(curso) {
-  const card = document.createElement("div");
-  card.className = "card curso-card";
+  const card = document.createElement("article");
+  card.className = "course-card";
 
   card.innerHTML = `
-    <img src="${curso.imagen}" class="card-img-top" alt="${curso.titulo}">
-    <div class="card-body d-flex flex-column justify-content-between">
-      <div>
-        <h5 class="card-title">${curso.titulo}</h5>
-        <h6 class="card-subtitle text-muted mb-2">${curso.autor}</h6>
-      </div>
-      <a href="curso.html?id=${curso.id}" class="btn btn-primary mt-2">Ver más</a>
-    </div>
+    <img src="${curso.imagen}" alt="${curso.titulo}" class="course-image">
+    <h3>${curso.titulo}</h3>
+    <p>Autor: ${curso.autor}</p>
+    <a class="view-more" href="#">Ver más</a>
   `;
 
   return card;

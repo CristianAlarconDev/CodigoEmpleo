@@ -1,144 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Declara que este documento es HTML5 -->
+<html lang="es">
+  <!-- Inicia el elemento raíz del documento y define el idioma como español -->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cursos</title>
+    <!-- Contiene metadatos sobre el documento -->
+    <meta charset="utf-8" />
+    <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Asegura que el sitio sea responsive en móviles -->
+    <title>Portal de Empleo - Inicio</title>
+    <!-- Título que se muestra en la pestaña del navegador -->
+    <style></style>
+    <!-- Fin de estilos internos -->
   </head>
+  <!-- Cierre de la sección de metadatos -->
   <body>
-    <h1>Cursos</h1>
-
-    <div class="container my-4">
-      <div class="row">
-        <!-- Sidebar -->
-        <div class="col-12 col-md-3 mb-4">
-          <div class="card p-3 sidebar-card">
-            <h5 class="mb-3">Filtros</h5>
-
-            <form id="filtros-form">
-              <!-- Lugar -->
-              <h6>Idioma</h6>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="Espanol"
-                  id="idioma-espanol"
-                  name="idioma"
-                />
-                <label class="form-check-label" for="lugar-ba">Espanol</label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="Córdoba"
-                  id="idioma-Ingles"
-                  name="idioma"
-                />
-                <label class="form-check-label" for="lugar-cba">Ingles</label>
-              </div>
-
-              <hr />
-
-              <!-- Tecnología -->
-              <h6>Tecnología</h6>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="JavaScript"
-                  id="tec-js"
-                  name="tecnologia"
-                />
-                <label class="form-check-label" for="tec-js">JavaScript</label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="Python"
-                  id="tec-py"
-                  name="tecnologia"
-                />
-                <label class="form-check-label" for="tec-py">Python</label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="React"
-                  id="tec-react"
-                  name="tecnologia"
-                />
-                <label class="form-check-label" for="tec-react">React</label>
-              </div>
-
-              <hr />
-
-              <!-- Seniority -->
-              <h6>Seniority</h6>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="Junior"
-                  id="senior-junior"
-                  name="seniority"
-                />
-                <label class="form-check-label" for="senior-junior"
-                  >Junior</label
-                >
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="Semi Senior"
-                  id="senior-semi"
-                  name="seniority"
-                />
-                <label class="form-check-label" for="senior-semi"
-                  >Semi Senior</label
-                >
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="Senior"
-                  id="senior-senior"
-                  name="seniority"
-                />
-                <label class="form-check-label" for="senior-senior"
-                  >Senior</label
-                >
-              </div>
-            </form>
+    <!-- Inicio del contenido visible de la página -->
+    <div class="container">
+      <!-- Contenedor principal centrado -->
+      <!-- HEADER: navegación principal y acciones de usuario -->
+      <header>
+        <!-- Encabezado con marca, navegación y acciones -->
+        <!-- .marca: logo + nombre; el enlace lleva al inicio (href="#" es un placeholder) -->
+        <a class="marca" href="#" aria-label="Ir a inicio">
+          <!-- Enlace que contiene logo y nombre de la marca -->
+          <!-- .logotipo: marca visual; aria-hidden porque es decorativo -->
+          <div class="logotipo" aria-hidden="true">FC</div>
+          <!-- Bloque visual con las iniciales -->
+          <div>
+            <!-- Contenedor del título y eslogan -->
+            <!-- título de marca -->
+            <div>&lt;Codigo Empleo/&gt;</div>
+            <!-- Texto de marca visible -->
+            <!-- eslogan / subtítulo -->
+            <div class="atenuado">Talento | Oportunidades | Comunidad</div>
+            <!-- Subtítulo atenuado -->
           </div>
+          <!-- Fin contenedor título/eslogan -->
+        </a>
+        <!-- Fin enlace marca -->
+
+        <!-- Navegación principal: lista de enlaces a secciones del sitio -->
+        <nav aria-label="Navegación principal">
+          <!-- Nav con etiqueta accesible -->
+          <ul>
+            <!-- Lista de enlaces de navegación -->
+            <li><a href="/indexBelen.html">Inicio</a></li>
+            <!-- Enlace sección Inicio -->
+            <li><a href="#">Empleos</a></li>
+            <!-- Enlace sección Empleos -->
+            <li><a href="#">Programas</a></li>
+            <!-- Enlace sección Programas -->
+            <li><a href="#">Recursos</a></li>
+            <!-- Enlace sección Recursos -->
+            <li><a href="#">Contacto</a></li>
+            <!-- Enlace sección Contacto -->
+          </ul>
+          <!-- Fin lista -->
+        </nav>
+        <!-- Fin navegación -->
+
+        <!-- Acciones: botones para iniciar sesión o registrarse -->
+        <div class="acciones">
+          <!-- Contenedor de botones -->
+          <button class="boton boton-outline" type="button">
+            Iniciar sesión
+          </button>
+          <!-- Botón inicio de sesión (visual) -->
+          <button class="boton boton-primario" type="button">Regístrate</button>
+          <!-- Botón registrarse (visual) -->
         </div>
-        <!-- Cursos -->
-        <div class="col-12 col-md-9" id="CursosContainer">
-          <h3>Cursos</h3>
-          <div class="row g-4">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="card course-card shadow-sm border-0">
-                <img
-                  src="./public/imgPlaceHolder.png"
-                  class="card-img-top"
-                  alt="Imagen del curso"
-                />
-                <div class="card-body text-center">
-                  <h5 class="card-title fw-bold">Introducción a JavaScript</h5>
-                  <p class="card-text text-muted">Por Dalto</p>
-                </div>
+        <!-- Fin acciones -->
+      </header>
+      <!-- Fin del encabezado -->
+
+      <main>
+        <!-- Contenido principal de la página -->
+        <div class="courses"></div>
+      </main>
+      <!-- Fin del contenido principal -->
+
+      <!-- FOOTER: contacto, redes y suscripción -->
+      <footer>
+        <!-- Inicio del footer principal -->
+        <div class="grid-footer">
+          <!-- Grid que contiene las tres columnas del footer -->
+          <div>
+            <!-- Columna 1: marca y contacto -->
+            <div class="marca-footer">
+              <!-- Fila con logotipo y texto de marca -->
+              <div class="logotipo">FC</div>
+              <!-- Logotipo o iniciales (visuales) -->
+              <div>
+                <!-- Contenedor para nombre y lema -->
+                <div class="nombre-marca">Codigo Empleo</div>
+                <!-- Nombre de la fundación -->
+                <div class="pequeno">Impulsando empleo y dignidad</div>
+                <!-- Lema pequeño -->
               </div>
+              <!-- Fin contenedor de nombre y lema -->
             </div>
+            <!-- Fin marca-footer -->
+
+            <div class="contacto pequeno">
+              <!-- Información de contacto -->
+              Dirección: Calle Falsa 123 · Ciudad · País<br />
+              <!-- Dirección con salto -->
+              Email:
+              <a href="mailto:info@codigoempleo.org">info@codigoempleo.org</a
+              ><br />
+              <!-- Enlace mailto -->
+              Tel: +54 300 000 0000
+              <!-- Teléfono de contacto -->
+            </div>
+            <!-- Fin contacto -->
           </div>
+          <!-- Fin columna 1 -->
+
+          <div>
+            <!-- Columna 2: espacios en blanco o futuras secciones (dejada simple) -->
+            <!-- Aquí puede ir información adicional, enlaces rápidos o mapa (por ahora vacío para simplicidad) -->
+          </div>
+          <!-- Fin columna 2 -->
+
+          <div>
+            <!-- Columna 3: redes y suscripción -->
+            <div class="fila-social">
+              <!-- Fila para redes -->
+              <div class="redes" aria-hidden="true">
+                <!-- Contenedores de iconos sociales (simples) -->
+                <div class="pastilla">FB</div>
+                <!-- Botón social Facebook -->
+                <div class="pastilla">TW</div>
+                <!-- Botón social Twitter -->
+                <div class="pastilla">IN</div>
+                <!-- Botón social LinkedIn -->
+              </div>
+              <!-- Fin redes -->
+            </div>
+            <!-- Fin fila-social -->
+
+            <!-- Formulario de suscripción (input de tipo email) -->
+            <div class="boletin">
+              <!-- Contenedor del boletín -->
+              <label class="pequeno" for="correo-boletin"
+                >Suscríbete a nuestro boletín</label
+              >
+              <!-- Label accesible -->
+              <div class="fila-boletin">
+                <!-- Fila que contiene input y botón -->
+                <input
+                  id="correo-boletin"
+                  type="email"
+                  placeholder="Tu correo"
+                  class="input-boletin"
+                />
+                <!-- Campo email -->
+                <button class="boton boton-primario">Suscribirme</button>
+                <!-- Botón de suscripción (no funcional sin backend) -->
+              </div>
+              <!-- Fin fila-boletin -->
+            </div>
+            <!-- Fin boletin -->
+          </div>
+          <!-- Fin columna 3 -->
         </div>
-      </div>
+        <!-- Fin grid-footer -->
+
+        <!-- Línea legal / copyright con año dinámico -->
+        <div class="legal">
+          <!-- Contenedor de la línea legal -->
+          © <span id="anio"></span> Codigo Empleo — Todos los derechos
+          reservados.
+          <!-- Año se insertará con JS -->
+        </div>
+        <!-- Fin legal -->
+      </footer>
+      <!-- Fin del footer principal -->
     </div>
-    <a href="./index.html"><button>Trabajos</button></a>
+    <!-- Cierre del contenedor principal -->
+
     <script type="module" src="/src/main.js"></script>
+    <script>
+      /* Script pequeño para insertar el año actual en el footer */
+      document.getElementById("anio").textContent =
+        new Date().getFullYear(); /* Inserta dinámicamente el año actual */
+    </script>
+    <!-- Fin del script -->
   </body>
+  <!-- Fin del contenido visible -->
 </html>
+<!-- Fin del documento HTML -->

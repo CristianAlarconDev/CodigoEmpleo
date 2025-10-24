@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cursos</title>
+  </head>
+  <body>
+    <h1>Cursos</h1>
+
+    <div class="container my-4">
+      <div class="row">
+        <!-- Sidebar -->
+        <div class="col-12 col-md-3 mb-4">
+          <div class="card p-3 sidebar-card">
+            <h5 class="mb-3">Filtros</h5>
+
+            <form id="filtros-form">
+              <!-- Lugar -->
+              <h6>Idioma</h6>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Espanol"
+                  id="idioma-espanol"
+                  name="idioma"
+                />
+                <label class="form-check-label" for="lugar-ba">Espanol</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Córdoba"
+                  id="idioma-Ingles"
+                  name="idioma"
+                />
+                <label class="form-check-label" for="lugar-cba">Ingles</label>
+              </div>
+
+              <hr />
+
+              <!-- Tecnología -->
+              <h6>Tecnología</h6>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="JavaScript"
+                  id="tec-js"
+                  name="tecnologia"
+                />
+                <label class="form-check-label" for="tec-js">JavaScript</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Python"
+                  id="tec-py"
+                  name="tecnologia"
+                />
+                <label class="form-check-label" for="tec-py">Python</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="React"
+                  id="tec-react"
+                  name="tecnologia"
+                />
+                <label class="form-check-label" for="tec-react">React</label>
+              </div>
+
+              <hr />
+
+              <!-- Seniority -->
+              <h6>Seniority</h6>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Junior"
+                  id="senior-junior"
+                  name="seniority"
+                />
+                <label class="form-check-label" for="senior-junior"
+                  >Junior</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Semi Senior"
+                  id="senior-semi"
+                  name="seniority"
+                />
+                <label class="form-check-label" for="senior-semi"
+                  >Semi Senior</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Senior"
+                  id="senior-senior"
+                  name="seniority"
+                />
+                <label class="form-check-label" for="senior-senior"
+                  >Senior</label
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- Cursos -->
+        <div class="col-12 col-md-9" id="CursosContainer">
+          <h3>Cursos</h3>
+          <div class="row g-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card course-card shadow-sm border-0">
+                <img
+                  src="./public/imgPlaceHolder.png"
+                  class="card-img-top"
+                  alt="Imagen del curso"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold">Introducción a JavaScript</h5>
+                  <p class="card-text text-muted">Por Dalto</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="./index.html"><button>Trabajos</button></a>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
